@@ -1,4 +1,12 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  min-height: 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +19,124 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wrapper{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(103, 50, 152);
+}
+
+.navbar{
+  padding: 0 4px;
+  background-color:rgb(52, 16, 86) ;
+}
+
+.navbar h1{
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+.filter-container{
+  display: flex;
+  /* background-color: blueviolet; */
+  flex-wrap: wrap;
+  padding: 10px 0px;
+  gap:10px;
+  justify-content: center;
+
+}
+
+.btn{
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 2px 5px;
+  border-radius: 7px;
+  font-weight: 100;
+  color: white;
+  background-color: black;
+}
+.btn:hover{
+  border-radius: 10px;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+ .cards-container{
+  padding: 10px 70px;
+
+} 
+
+.spinner-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards{
+ 
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin: 2rem 4rem;
+  margin-bottom: 4px;
+}
+
+.card{
+   position: relative; 
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  margin: 0.4rem;
+  height: 200px;
+  border-radius: 10px;
+   /* overflow: hidden; 
+  opacity: 0.8; */
+  border: 1px solid black;
+  background-color: rgb(52, 16, 86);
+  box-shadow: 0px 0px 10px rgb(227, 218, 218);
+}
+
+
+
+.img img{
+  
+ width: 9.8rem; 
+ object-fit: cover;
+  border-radius: 10px;
+}
+.btne{
+  position: absolute;
+  border-radius: 50%;
+  padding: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+ top: 29%;
+  right: 4%;
+  cursor: pointer;
+}
+
+.details{
+  padding:0.4rem 0.4rem;
+  display: flex;
+  background-color: rgb(52, 16, 86);
+  flex-direction: column;
+  overflow-y: auto;
+}
+.title{
+  color: white;
+  font-size: 0.7rem;
+  margin-bottom: 0.2rem;
+}
+.description{
+  font-size: 0.4rem;
+  color: white;
+}
+
